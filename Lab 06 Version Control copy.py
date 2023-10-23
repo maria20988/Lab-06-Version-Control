@@ -1,7 +1,7 @@
 def decoder(number):
     hi = list(number)
-    num = ""
-    for i in range(len(hi))
+    num_list = ""
+    for i in range(len(hi)):
         hi[i] = int(hi[i])-3
         if hi[i] <= 0:
             hi[i] = 10 - hi[i]
@@ -44,7 +44,7 @@ if __name__ == '__main__':
             print('Your password has been encoded and stored!')
         elif option == 2:
             decoded_password = decoder(encode_option)
-            print('The encoded password is', encoded_password, ', and the original password is', decoded_password, '.')
+            print('The encoded password is', encode_option, ', and the original password is', decoded_password, '.')
         elif option == 3:
             menu_continue = False
 
